@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Lucky Cat Cafe</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f6f0; 
+            text-align:center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #FFE7C3; 
+            padding: 20px;
+            color: #AA866C;
+        }
+        section h2{
+            font-size:30px;
+            color:#8c5a2b;
+            background:#FFE7C3;
+            display:inline-block;
+            padding:10px 25px;
+            border-radius:20px;
+            border:2px #8c5a2b;
+            box-shadow:2px 2px 6px rgba(0,0,0,0.15);
+             margin-bottom:15px;
+        }
+
+
+        section h2::after{
+            display:block;
+            width:60%;
+            height:3px;
+            background:#8c5a2b;
+            margin:8px auto 0;
+            border-radius:3px;
+            content:"";
+        }
+
+        
+        .logo {
+            float: left;
+            margin: auto;
+        }
+       
+       nav{
+            background-color:#f2d7b5;
+            padding:12px;
+            border-bottom:3px solid #8c5a2b;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:#8c5a2b;
+            font-weight:bold;
+            margin:15px;
+            font-size:18px;
+        }
+
+        nav a:hover{
+    color:#1f305e;
+        }
+
+        section {
+            background-color: #f2d7b5; 
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            border: 3px solid #8c5a2b;
+        }
+
+        h2 {
+            color: #1f305e;
+        }
+        h3 {
+            color: #8c5a2b;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 8px;
+            font-size: 18px;
+        }
+
+        .price {
+            color: green; 
+            font-weight: bold;
+        }
+        
+        #gal {
+            display: flex;
+        }
+
+        .gallery-grid { 
+                display: grid; 
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                gap: 15px;
+            }
+            .img-box{
+                width:100%;
+                height:150px;
+                object-fit:cover;
+                border-radius:6px;
+            }
+
+            .img-box { 
+                background: #ddd; 
+                height: 150px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                color: #777; 
+                border-radius: 4px;
+                width: 100px;
+                height: 100px;
+            }
+
+        footer {
+            background-color: #8c5a2b;
+            color: white;
+            padding: 10px;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 5px;
+            
+        }
+        
+        input[type="submit"] {
+            background-color: #FFE7C3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="cat.png" width="100px" height="100px">
+        </div>
+        <h1>Lucky Cat Cafe</h1>
+        <p><i>"Coffee is ready, cats are on duty"</i></p>
+    </header>
+    <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Coffee</a>
+    <a href="#food">Food</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#order-form">Order</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>located on the 2nd floor of the NJT Building in Balibago, a cozy, cat-themed café and coworking space. We offer a relaxing, productive environment with resident cats to interact with, featuring cat-themed drinks and an area dedicated to playing and touching cats.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2> 
+        <h3> coffe(iced and hot):</h3>
+        <ul>
+            <li>Cafe Ameow-Ricano <span class="price">Php90</span></li>
+            <li>Cafe Latte / Hazelnut Latte<span class="price">Php180</span></li>
+            <li>Cafe Mo-Cat (Mocha) <span class="price">Php180</span></li>
+             <li>Caramel Meow-Chiatto <span class="price">Php185</span></li>
+              <li>S-Paw-Nish Latte <span class="price">Php190</span></li>
+              <li>Sea Salt Latte <span class="price">Php190</span></li>
+              <li>Dirty Meow-Cha (Matcha)<span class="price">Php200</span></li>
+               <li>Rocksalt and Cheese Latte<span class="price">Php200</span></li>
+        </ul>
+    </section>
+    
+     <section id="food">
+        <h2>Our Menu</h2> 
+        <h3> Snacks/food:</h3>
+        <ul>
+            <li>Chickitten Bites with Flavored Fries <span class="price">Php160</span></li>
+        </ul>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery:</h2>
+        <div class="gallery-grid">
+            <img src="coffe.jpg" class="img-box">
+            <img src="coffeecat.jpg" class="img-box">
+            <img src="morepeople.jpg" class="img-box">
+            <img src="people.jpg" class="img-box">
+        </div>
+    </section>
+    <section id="order-form">
+        <h2>Place order here</h2><br>
+        <label>Name:</label><br>
+        <input type="text" placeholder="Enter your name" required><br><br>
+        <label>Gmail:</label><br>
+        <input type="text" placeholder="Enter your Gmail" required><br><br>
+
+    SELECT ORDER: <br>
+         <select>
+            <option>Cafe Ameow-Ricano</option>
+            <option>Cafe Latte / Hazelnut Latte</option>
+            <option>Cafe Mo-Cat (Mocha) </option>
+            <option>Caramel Meow-Chiatto</option>
+            <option>S-Paw-Nish Latte </option>
+            <option>Sea Salt Latte</option>
+            <option>Dirty Meow-Cha (Matcha)</option>
+            <option>Rocksalt and Cheese Latte</option>
+         </select> <br> <br>
+
+        <label>ANY FEEDBACK?</label><br>
+        <textarea rows="3" maxlength="20" id="comments" placeholder="Max of 20 characters"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </section>
+
+    <section id="contact">
+        <strong><h2>Contact Us:<br><a href="https://tinyurl.com/3da52cmm">click here</a></h2></strong>
+    </section>
+
+    <footer>
+       Gmail: luckycatcafe2025@gmail.com <br>
+       Facebook: Lucky-Cat Cafe
+    </footer>
+
+</body>
+</html>
